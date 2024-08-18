@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    justify-content: center; /* Yatay hizalama */
+}
+
+/* Tüm container'ı hizalayan stil */
+.container {
+    display: flex;
+    /*align-items: center; /* Dikey hizalama */
+    justify-content: center; /* Yatay hizalama */
+    height: 100vh; /* Sayfanın tamamını kaplar */
+}
+
+/* Fotoğrafın container'ı */
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Fotoğrafı yuvarlak yapar */
+    object-fit: cover; /* Fotoğrafın düzgün görünmesi için */
+    border: 2px solid #000; /* İsteğe bağlı, fotoğrafın etrafındaki sınır */
+}
+
+/* Yazıların container'ı */
+.text-container {
+    margin-left: 20px; /* Fotoğraf ve yazı arasında boşluk bırakır */
+}
+
+.center-text {
+    display: flex;
+    justify-content: center; /* Yatay hizalama */
+    height: 100vh; /* Sayfanın tamamını kaplar */
+}
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+li {
+    color: red;
+    font-size: 32px;
+    list-style-type: none;
+}
+
+ul {
+    font-size: 20px;
+}
