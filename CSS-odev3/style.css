@@ -1,0 +1,189 @@
+div.top>div.top-left>a {
+    color: #000;
+    opacity: 0.75;
+    text-decoration: none; /* Varsayılan altını çizili efekti kaldırır */
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+div.top>div.top-right>a {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none; /* Varsayılan altını çizili efekti kaldırır */
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+div.top>div.top-right>a:hover {
+    color: #000;
+    opacity: 0.75;
+}
+
+div.top>div>a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altını çizer */
+}
+
+.top {
+    display: flex; /* Flexbox kullanımı */
+    justify-content: space-between; /* İki yana yaslama */
+    align-items: center;
+}
+
+.top-left, .top-right {
+    display: flex;
+    align-items: center; /* İçeriği dikey olarak ortalar */
+}
+
+.profil-picture img {
+    border-radius: 50%; /* Fotoğrafı yuvarlak yapar */
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.logo {
+    text-align: center; /* Yatayda ortalar */
+    margin-top: 100px;
+}
+
+.input-area {
+    text-align: center; /* Yatayda ortalar */
+}
+
+input {
+    border: none;
+}
+
+div.input-area > input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 480px;
+    height: 20px;
+}
+
+.search-area {
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    z-index: 3;
+    height: 44px;
+    margin: 20px auto;
+    width: 582px;
+    border-radius: 20px; /* Tüm köşeleri ovalleştirir */
+}
+
+.search-area:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+    border: none;
+    padding: 10px;
+    justify-content: space-between; /* İki yana yaslama */
+}
+
+.search-img {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.search-img span {
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+    display: inline-block;
+    fill: currentColor;
+    line-height: 24px;
+    position: relative;
+}
+
+.mic {
+    margin: 0 8px;
+}
+
+.buttons {
+    text-align: center; /* Yatayda ortalar */
+}
+
+div.buttons > input {
+    height: 36px;
+    color: #5f6368;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #f2f2f2;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.tooltip {
+    position: relative; /* Kapsayıcıyı konumlandırır */
+    display: inline-block; /* İçerikleri satır içi yapar */
+}
+
+.tooltiptext {
+    visibility: hidden; /* Varsayılan olarak gizli */
+    width: 120px;
+    background-color: black; 
+    color: #fff;
+    text-align: center; /* Metni ortalar */
+    padding: 5px 0; /* İç boşluk */
+    position: absolute; /* Tooltip'in konumunu ayarlar */
+    z-index: 1; /* Tooltip diğer öğelerin üstünde görünür */
+    top: 125%; /* Görselin altında yer alır */
+    left: 50%; /* Yatay ortalama */
+    margin-left: -60px; /* Yatay konum düzeltme */
+    opacity: 0; /* Başlangıçta görünmez */
+    transition: opacity 0.3s; /* Geçiş efekti */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Hover durumunda görünür */
+    opacity: 1; /* Tamamen görünür hale gelir */
+}
+
+.footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: -8px;
+    display: flex; /* Flexbox kullanımı */
+    justify-content: space-between; /* İki yana yaslama */
+    height: 35px;
+    align-items: center; /* İçeriği dikey olarak ortalar */
+}
+
+div.footer-left>a {
+    color: #5f6368;
+    text-decoration: none; /* Varsayılan altını çizili efekti kaldırır */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+div.footer-right>a {
+    color: #5f6368;
+    text-decoration: none; /* Varsayılan altını çizili efekti kaldırır */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+div.footer-left>a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altını çizer */
+}
+
+div.footer-right>a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde altını çizer */
+}
+
